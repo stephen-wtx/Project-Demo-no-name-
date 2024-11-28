@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="./ESTILIZACAO/CSS/style.css">
+    <style>
+        /* Fundo da Página */
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('./ESTILIZACAO/IMG/FundoUCM.JPG') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: #fff; /* Cor do texto para maior contraste */
+        }
+
+        /* Descrição lateral */
+        .left-description {
+            position: absolute;
+            top: 76px; /* Ajuste para coincidir com o início após o cabeçalho */
+            left: 0;
+            width: 50%;
+            height: calc(100vh - 76px); /* Usa a altura da janela menos a altura do cabeçalho */
+            background: rgba(0, 0, 0, 0.6); /* Fundo semitransparente */
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #fff;
+            overflow-y: auto; /* Adiciona rolagem se o conteúdo for maior que o espaço disponível */
+        }
+
+        .left-description h1 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .left-description p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Outros estilos */
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .connect-btn {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+
+        .connect-btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Slideshow Container */
+        .slider-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 50px auto;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Slider */
+        .slider {
+            display: flex;
+            transition: transform 1s ease-in-out;
+        }
+
+        /* Slide Images */
+        .slide {
+            width: 100%;
+            flex-shrink: 0;
+            display: none;
+        }
+
+        .slide.active {
+            display: block;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div class="left-description">
+        <h1>Bem-vindo ao Centro de Estudo</h1>
+        <p>
+            Este site foi criado especialmente para apoiar os estudantes na sua jornada acadêmica. Aqui você encontrará uma vasta coleção de recursos que facilitarão seus estudos, incluindo slides de aulas, materiais de cadeiras, aplicativos úteis e muito mais. O objetivo é oferecer um ambiente organizado e acessível, onde você poderá consultar conteúdos relevantes, preparar-se para os exames e melhorar o seu desempenho acadêmico.
+
+            Com uma navegação simples e intuitiva, o portal é uma ferramenta ideal para quem busca a melhor otimização o tempo e alcançar resultados nos estudos. Explore, aprenda e conquiste seus objetivos acadêmicos com conhecimento!
+        </p>
+    </div>
+
+    <header>
+        <div class="off-screen-menu">
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Ano Acadêmico <span class="arrow" onclick="toggleDropdown()">&#9662;</span></a>
+                    <div class="dropdown-content">
+                        <a href="#">1 Ano</a>
+                        <a href="#">2 Ano</a>
+                        <a href="#">3 Ano</a>
+                        <a href="#">4 Ano</a>
+                    </div>
+                </li>
+                <li><a href="#">Página Principal</a></li>
+                <li><a href="#">Testes</a></li>
+                <li><a href="./PAGINAS/Exames.html">Exames</a></li>
+                <li><a href="#">Links</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    <li><a href="#">Página Principal</a></li>
+                  
+                    </li>
+                </ul>
+            </nav> 
+
+            <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="search">
+                
+                <a href="./PAGINAS/login/Form.html"><button class="connect-btn">Conectar</button></a>
+            </div>
+        </div>
+    </header>
+
+
+    <script>
+        const hamMenu = document.querySelector('.ham-menu');
+        const offScreenMenu = document.querySelector('.off-screen-menu');
+
+        hamMenu.addEventListener('click', () => {
+            hamMenu.classList.toggle('active');
+            offScreenMenu.classList.toggle('active');
+        });
+
+        // Slideshow JavaScript
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        setInterval(nextSlide, 4000);
+        showSlide(currentSlide);
+    </script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 ano</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+        border-radius: 8px;
+        
+    }
+
+    .container h1 {
+        margin-bottom: 10px;
+        color: #669bbc;
+    }
+
+    .semestre {
+        width: 50%;
+        margin-bottom: 30px;
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .semestre h2 {
+        color: #669bbc;
+        margin-bottom: 20px;
+    }
+
+    .cadeira {
+        background-color: #669bbc;
+        text-align: center;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        transition: backgound-color 0.3s ease, transform 0.2s;
+    }
+
+    .cadeira a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .cadeira:hover {
+        background-color: #0077b6;
+        transform: scale(1.02);
+    }
+
+    footer {
+        background-color: #6c757d;
+        color: #fff;
+        padding: 30px;
+        text-align: center;
+        border-radius: 0 0 8px 8px;;
+    }
+
+    @media (max-width: 768px){
+        .container {
+            padding: 20px;
+        }
+
+        .semestre {
+            padding: 15px;
+        }
+
+        .cadeira {
+            font-size: 14px;
+            padding: 8px 10px;
+        }
+    }
+
+    @media (max-width: 480px){
+        h1 {
+            font-size: 18px;
+        }
+
+        h1 {
+            font-size: 16px;
+        }
+
+        .cadeira {
+            padding: 6px 8px;
+        }
+
+        footer {
+            margin-top: 31vh;
+        }
+    }
+
+
+
+
+</style>
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>4o Ano</h1>
+            <div class="semestre">
+                <h2>I Semestre</h2>
+                <div class="cadeira"><a href="">lorem</a></div>
+                <div class="cadeira"><a href="">lorem</a></div>
+                <div class="cadeira"><a href="">lorem</a></div>
+                <div class="cadeira"><a href="">lorem</a></div>
+                <div class="cadeira"><a href="">lorem</a></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p> &copy;2024. Demo. ALL RIGHTS RESERVED.</p>
+    </footer>
+</body>
+</html>
