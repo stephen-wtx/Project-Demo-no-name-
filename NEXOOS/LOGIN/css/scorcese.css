@@ -1,0 +1,321 @@
+body{
+
+    font-family: cursive;
+
+}
+
+.main{
+
+    display: flex;
+    margin-left: -15px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    padding: 0px;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.right{
+
+    background-color: black;
+    color: white;
+    width: 50%;
+    display: flex;
+    height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.right img{
+
+    width: 127%;
+    height: 115%;
+
+}
+
+.icon{
+    width: 20px;
+}
+
+.Email_Space{
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.Name_Space{
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.PassWord_Space{
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.PassWord_Space_Confirmation{
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.Email_Space_Recover{
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.Email_Space_login{
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.PassWord_Space_Login{
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+
+.left{
+
+    width: 50%;
+    display: flex;
+    height: 100vh;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+.termos{
+
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin-left: 10px;
+    color: #243D7D;
+}
+
+.termos input{
+
+    width: 15px;
+    color: #243D7D;
+
+}
+
+
+
+.left h2 {
+
+
+    color: #243D7D;
+    border-radius: 10px;
+    width: 300px;
+    height: 50px;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.login{
+
+    background-color: #243D7D;
+    color: white;
+    border-radius: 10px;
+    width: 150px;
+    margin: 25px;
+    font-family: cursive;
+    height: 50px;
+
+
+}
+
+.labell{
+
+    margin: 25px 15px 25px;
+    display: flex;
+    text-align: justify;
+    color: #243D7D;
+
+}
+
+.password{
+
+    margin: 0px 0px;
+}
+
+.email{
+
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 7px;
+    display: flex;
+    border-color: #243D7D;
+
+}
+
+.password{
+
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 7px;
+    display: flex;
+    border-color: #243D7D;
+
+}
+::placeholder{
+
+    font-family: cursive;
+    color: #243D7D;
+}
+
+@media (max-width: 1024px) {
+    .main {
+        flex-direction: column; /* Muda para coluna */
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        height: auto; /* Adapta a altura */
+    }
+
+    .right img {
+        width: 0%; /* Ajusta imagem ao tamanho do contêiner */
+        height: 0%;
+    }
+}
+
+
+.input-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #243D7D;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px 0;
+    background-color: white;
+}
+
+.input-container img.input-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.input-container input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-family: cursive;
+    font-size: 14px;
+    color: #243D7D;
+}
+
+.input-container input::placeholder {
+    color: #243D7D;
+    font-family: cursive;
+}
+
+.input-container:focus-within {
+    border-color: #243D7D;
+}
+
+
+/* Para telas menores que 768px (tablets em orientação retrato e celulares maiores) */
+@media (max-width: 768px) {
+    .main {
+        margin: 10px; /* Reduz margens */
+    }
+
+    .left {
+        padding: 20px; /* Reduz o espaçamento interno */
+    }
+
+    .left h2 {
+        font-size: 18px; /* Diminui tamanho do texto */
+        width: 100%;
+    }
+
+    .email,
+    .password {
+        width: 90%; /* Ajusta largura dos campos */
+    }
+
+    .login {
+        width: 100%;
+        font-size: 14px; /* Ajusta tamanho do botão */
+    }
+}
+
+/* Para telas menores que 480px (celulares pequenos) */
+@media (max-width: 480px) {
+    .right img {
+        width: 0%;
+        height: 0vh;
+    }
+
+    .left {
+        padding: 10px;
+    }
+
+    .email,
+    .password {
+        width: 100%; /* Ocupa toda a largura disponível */
+    }
+
+    .login {
+        font-size: 12px;
+        padding: 10px;
+        height: auto; /* Ajusta altura do botão */
+    }
+
+    .termos {
+        flex-direction: column; /* Muda para empilhado */
+        text-align: center;
+    }
+}
+

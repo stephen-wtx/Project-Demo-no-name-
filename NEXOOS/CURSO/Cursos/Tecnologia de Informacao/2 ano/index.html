@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Ano</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        text-decoration: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+        border-radius: 8px;
+        /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    }
+
+    h1 {
+        margin-bottom: 20px;
+        color: #2579bc;
+    }
+
+    h2 {
+        margin-bottom: 10px;
+        color: #2579bc;
+        font-weight: bold;
+    }
+
+    .semestre {
+        width: 50%;
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+  
+    .cadeiras {
+        background-color: #2579bc;
+        margin: 10px 0px;
+        padding: 10px 15px;
+        text-align: center;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.2s;
+    }
+
+    .cadeiras a {
+        color: #fff;
+    }
+
+
+    .cadeiras:hover {
+        background-color: #0771aa;
+        transform: scale(1.02);
+    }
+
+    footer {
+        color: #fff;
+        margin-top: 30px;
+        padding: 15px;
+        text-align: center;
+        background-color: #353a40;
+        border-radius: 0 0 8px 8px;
+    }
+
+    @media (max-width: 768px){
+        .container {
+            padding: 20px;
+        }
+
+        .semestre {
+        padding: 15px;
+    }
+
+    .cadeiras {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+}
+
+
+    @media (max-width: 480px){
+        h1 {
+            font-size: 18px;
+        }
+
+        h2 {
+            font-size: 16px;
+        }
+
+        .cadeiras {
+            padding: 6px 8px;
+        }
+    }
+
+</style>
+
+<body>
+    <header>
+        <nav>
+           
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>2o Ano</h1>
+            <div class="semestre">
+                <h2>I Semestre</h2>
+                <div class="cadeiras"><a href="#">Análise e Desenho Orientado à Objectos</a></div>
+                <div class="cadeiras"><a href="#">Análise e Desenho de Base de Dados</a></div>
+                <div class="cadeiras"><a href="#">Estrutura de Dados e Algoritmos</a></div>
+                <div class="cadeiras"><a href="#">Fundamentos de Desenho de Páginas Web</a></div>
+                <div class="cadeiras"><a href="#">Inglês III</a></div>
+            </div>
+
+            <div class="semestre">
+                <h2>II Semestre</h2>
+                <div class="cadeiras"><a href="#">Administração e Manutenção de Sistemas</a></div>
+                <div class="cadeiras"><a href="#">Estudos Avançados de Redes de Computer</a></div>
+                <div class="cadeiras"><a href="#">Implementação de Base de Dadow</a></div>
+                <div class="cadeiras"><a href="#">Programação Orientado a Objectos</a></div>
+                <div class="cadeiras"><a href="#">Inglês IV</a></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;2024. Demo. ALL RIGHTS RESERVED.</p>
+    </footer>
+</body>
+</html>
