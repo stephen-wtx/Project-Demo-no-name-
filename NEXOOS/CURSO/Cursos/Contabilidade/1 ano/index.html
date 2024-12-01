@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Ano</title>
+</head>
+
+<style>
+    * {
+        text-decoration: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        margin-bottom: 20px;
+        color: #669bbc;
+    }
+
+    h2 {
+        margin-bottom: 10px;
+        color: #669bbc;
+        font-weight: bold;
+    }
+
+    .semestre {
+        width: 50%;
+        margin-bottom: 20px;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+  
+    .cadeiras {
+        background-color: #669bbc;
+        margin: 5px 0px;
+        padding: 10px 15px;
+        text-align: center;
+        transition: background-color 0.3s ease, transform 0.2s;
+    }
+
+    .cadeiras a{
+        color: #fff;
+    }
+
+
+    .cadeiras:hover {
+        background-color: #0077b6;
+        transform: scale(1.02);
+    }
+
+    footer {
+        color: #fff;
+        margin-top: 30px;
+        padding: 15px;
+        text-align: center;
+        background-color: #6c757d;
+        border-radius: 0 0 8px 8px;
+    }
+
+    @media (max-width: 768px){
+        .container {
+            padding: 20px;
+        }
+    }
+
+    .semestre {
+        padding: 15px;
+    }
+
+    .cadeiras {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    @media (max-width: 480px){
+        h1 {
+            font-size: 18px;
+        }
+
+        h2 {
+            font-size: 16px;
+        }
+
+        .cadeiras {
+            padding: 6px 8px;
+        }
+    }
+
+</style>
+<body>
+    <header>
+        <nav>
+           
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>1o Ano</h1>
+            <div class="semestre">
+                <h2>I Semestre</h2>
+                <div class="cadeiras"><a href="#">Álgebra</a></div>
+                <div class="cadeiras"><a href="#">Fundamentos de TI</a></div>
+                <div class="cadeiras"><a href="#">Introdução a Informática</a></div>
+                <div class="cadeiras"><a href="#">Métodos de Pesquisa</a></div>
+                <div class="cadeiras"><a href="#">Ingles I</a></div>
+            </div>
+
+            <div class="semestre">
+                <h2>II Semestre</h2>
+                <div class="cadeiras"><a href="#">Habilidades de vida</a></div>
+                <div class="cadeiras"><a href="#">Plataforma Hardware & Software</a></div>
+                <div class="cadeiras"><a href="#">Fundamentos de Redes</a></div>
+                <div class="cadeiras"><a href="#">Fundamentos de Programação</a></div>
+                <div class="cadeiras"><a href="#">Inglês II</a></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy;2024. Demo. ALL RIGHTS RESERVED.
+    </footer>
+</body>
+</html>
